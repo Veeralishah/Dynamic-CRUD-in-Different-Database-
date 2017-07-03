@@ -11,13 +11,13 @@ def createdb_mysql():
 
     # SET UP THE CONNECTION
     try:
-        db = mdb.connect(host="localhost", user="root", passwd="Drc@1234")
+        db = mdb.connect(host="localhost", user="USERNAME", passwd="PASSWORD")
         db1 = db.cursor()
         with warnings.catch_warnings():
             warnings.simplefilter('ignore')
             db1.execute('CREATE DATABASE IF NOT EXISTS testdb')
             print('Create Database MYSQL testdb')
-        con = mdb.connect('localhost', 'root', 'Drc@1234', 'testdb')
+        con = mdb.connect('localhost', 'USERNAME', 'PASSWORD', 'testdb')
         cur = con.cursor()
         cur.execute("SELECT VERSION()")
         ver = cur.fetchone()
@@ -34,8 +34,8 @@ def creatdb_postgres():
 
     # SET UP THE CONNECTION
     try:
-        con = pdb.connect(database="testdb", user="postgres",
-                          password="Drc@1234", host="127.0.0.1", port="5432")
+        con = pdb.connect(database="testdb", user="USERNAME",
+                          password="PASSWORD", host="127.0.0.1", port="5432")
         print "Create database testdb"
         cur = con.cursor()
         cur.execute('SELECT version()')
