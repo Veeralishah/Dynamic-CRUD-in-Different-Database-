@@ -17,7 +17,6 @@ You have to install Python
 
 https://www.howtogeek.com/197947/how-to-install-python-on-windows/
 
-if You can use Windows,
 You have to install Mysql 
 
 https://stackoverflow.com/questions/21372637/installing-python-2-7-on-windows-8
@@ -34,7 +33,6 @@ for step by step install PostgreSQL in Ubuntu 16.04:
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
 
-if You can use Windows,
 You have to install Sqlite 
 
 http://www.sqlitetutorial.net/download-install-sqlite/
